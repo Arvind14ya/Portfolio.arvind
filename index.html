@@ -319,8 +319,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 5% 
     <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
     <li><a href="#certificates" onclick="closeMobile()">Certificates</a></li>
     <li><a href="#contact" onclick="closeMobile()">Contact</a></li>
-    <li><a href="Arvind_Yadav_Resume.pdf" onclick="showToast('📥 Resume download!');closeMobile();return false" style="color:var(--accent)"><i class="fas fa-download"></i> Resume</a></li>
-  </ul>
+       <a href="Arvind_Yadav_Resume.pdf"
+          target="_blank"
+          onclick="showToast('📄 Opening Resume...');closeMobile();"
+          style="color:var(--accent)">
+          <i class="fas fa-download"></i> Resume
+  </a>  </ul>
 </div>
 
 <!-- HERO -->
@@ -336,7 +340,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:48px 5% 
       <div class="hero-actions">
         <a href="#contact" class="btn-primary"><i class="fas fa-paper-plane"></i> Hire Me</a>
         <a href="#projects" class="btn-outline"><i class="fas fa-code"></i> View Work</a>
-        <a href="Arvind_Yadav_Resume.pdf" class="btn-outline" onclick="showToast('📥 Resume download starting!');return false"><i class="fas fa-download"></i> Resume</a>
+<a href="Arvind_Yadav_Resume.pdf"
+   download
+   class="btn-outline"
+   onclick="showToast('📥 Resume download starting!')">
+   <i class="fas fa-download"></i> Resume
+</a>      
       </div>
       <div class="hero-socials">
         <a href="https://github.com/Arvind14ya" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
